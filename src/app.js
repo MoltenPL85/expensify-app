@@ -1,4 +1,3 @@
-import 'react-dates/initialize';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
@@ -7,10 +6,10 @@ import configureStore from './store/configureStore';
 import { addExpense } from './actions/expenses';
 import { setTextFilter } from './actions/filters';
 import getVisibleExpenses from './selectors/expenses';
+import 'react-dates/initialize';
+import 'react-dates/lib/css/_datepicker.css';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
-import 'react-dates/lib/css/_datepicker.css';
-import { setTimeout } from 'timers';
 
 const store = configureStore();
 
