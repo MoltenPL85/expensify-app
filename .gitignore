@@ -1,6 +1,8 @@
 .idea/
 .vscode/
 public/dist/
+.env.test
+.env.development
 build
 node_modules
 npm-debug.log
